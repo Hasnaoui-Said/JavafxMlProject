@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="673.0" prefWidth="1122.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="673.0" prefWidth="1122.0" style="-fx-background-color: #eef8f5;">
+         <children>
+            <VBox layoutX="364.0" layoutY="238.0" prefHeight="225.0" prefWidth="127.0">
+               <children>
+                  <Label text="Age">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="1.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Pclass">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="1.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Siblings/Spouses">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="1.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="19.0" prefWidth="184.0" text="Parent/Children">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="1.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Fare">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="1.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Gender">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="18.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="1.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="490.0" layoutY="245.0" prefHeight="289.0" prefWidth="231.0">
+               <children>
+                  <TextField fx:id="fieldAge" prefHeight="12.0" prefWidth="231.0" promptText="Enter your Age">
+                     <padding>
+                        <Insets top="11.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="fieldPclass" fx:id="fieldPclass" layoutX="10.0" layoutY="10.0" promptText="Enter the Pclass">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="11.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="fieldSbSp" fx:id="fieldSbSp" layoutX="10.0" layoutY="45.0" promptText="how many Sblings/Spouses">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="11.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="fieldPaCh" fx:id="fieldPaCh" layoutX="10.0" layoutY="78.0" promptText="how many Parents/Children">
+                     <padding>
+                        <Insets top="11.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="fieldFare" fx:id="fieldFare" layoutX="10.0" layoutY="112.0" promptText="Enter the fare">
+                     <padding>
+                        <Insets top="11.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <HBox prefHeight="22.0" prefWidth="231.0">
+                     <children>
+                        <RadioButton id="radiogender" fx:id="radioGenderM" mnemonicParsing="false" prefHeight="12.0" prefWidth="76.0" selected="true" text="Male">
+                           <HBox.margin>
+                              <Insets left="15.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets top="12.0" />
+                           </padding>
+                        </RadioButton>
+                        <RadioButton id="radiogender" fx:id="radioGenderF" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="89.0" text="Female">
+                           <HBox.margin>
+                              <Insets right="5.0" top="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets top="12.0" />
+                           </padding>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button id="btnPredicate" fx:id="btnPredicate" layoutX="496.0" layoutY="504.0" mnemonicParsing="false" onAction="#getPrediction" prefHeight="36.0" prefWidth="195.0" style="-fx-background-color: #55b79d;" text="Predicte" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font></Button>
+            <Text layoutX="369.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill the form to get the prediction">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="43.0" fitWidth="318.0" layoutX="238.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Peach%20-%20DrawKit/Scene%20Elements/cloud-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="251.0" layoutX="576.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Peach%20-%20DrawKit/Scene%20Elements/cloud-2.png" />
+               </image>
+            </ImageView>
+            <Label contentDisplay="RIGHT" layoutX="758.0" layoutY="34.0" prefHeight="0.0" prefWidth="20.0" text=",,">
+               <font>
+                  <Font name="Aldhabi" size="110.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="RIGHT" layoutX="317.0" layoutY="133.0" prefHeight="0.0" prefWidth="20.0" rotate="180.0" text=",,">
+               <font>
+                  <Font name="Aldhabi" size="110.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="165.0" fitWidth="103.0" layoutX="113.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true" rotate="4.1">
+               <image>
+                  <Image url="@Peach%20-%20DrawKit/UI%20Elements/tree-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="172.0" fitWidth="99.0" layoutX="31.0" layoutY="486.0" pickOnBounds="true" preserveRatio="true" rotate="-18.4">
+               <image>
+                  <Image url="@Peach%20-%20DrawKit/UI%20Elements/tree-3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="310.0" fitWidth="133.0" layoutX="884.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Peach%20-%20DrawKit/Characters/man-walking.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="968.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Peach%20-%20DrawKit/UI%20Elements/plant-3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
