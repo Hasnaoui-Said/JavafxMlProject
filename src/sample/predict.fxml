@@ -154,7 +154,7 @@
                   </TextField>
                   <HBox prefHeight="22.0" prefWidth="231.0">
                      <children>
-                        <RadioButton id="radiogender" fx:id="radioGenderM" mnemonicParsing="false" prefHeight="12.0" prefWidth="76.0" selected="true" text="Male">
+                        <RadioButton id="radiogender" fx:id="radioGenderM" mnemonicParsing="false" onAction="#clickedRadio" prefHeight="12.0" prefWidth="76.0" selected="true" text="Male">
                            <HBox.margin>
                               <Insets left="15.0" right="5.0" top="10.0" />
                            </HBox.margin>
@@ -162,7 +162,7 @@
                               <Insets top="12.0" />
                            </padding>
                         </RadioButton>
-                        <RadioButton id="radiogender" fx:id="radioGenderF" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="89.0" text="Female">
+                        <RadioButton id="radiogender" fx:id="radioGenderF" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickedRadio" prefHeight="15.0" prefWidth="89.0" text="Female">
                            <HBox.margin>
                               <Insets right="5.0" top="10.0" />
                            </HBox.margin>

@@ -147,13 +147,21 @@ public class Controller {
 
 
 
-
-
-
-
-
-
             System.out.println(response.body());
         }
+    }
+
+    public void clickedRadio(ActionEvent evt) {
+        if(evt.getSource()==radioGenderM){
+
+                radioGenderF.setSelected(false);
+
+        }
+        if(evt.getSource()==radioGenderF){
+
+                radioGenderM.setSelected(false);
+
+        }
+
     }
 }
